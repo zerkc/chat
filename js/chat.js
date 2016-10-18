@@ -1,7 +1,10 @@
 /**
  * Created by gustavog on 15/10/16.
  */
-
+var lock = false;
+var lockbyspan = false;
+var messageCount = 0;
+var alert =0;
 $(document).ready(function(){
     var first = true;
     for(var i = 1;i<100;i++){
@@ -30,8 +33,19 @@ $(document).ready(function(){
     });
     getMessages(1);
     setInterval(getMessages,1000);
+    setInterval(function (){ messageCount = 0; },5000);
 });
 function sendMessage(){
+    if(messageCount == 10){
+        lockbyspan =true;
+        setInterval(function(){lockbyspan=false},60000);
+    }
+    if(lockbyspan){
+        addMessage("Se ah bloqueado el envio de mensajes por 1 minuto(s)",false,--alert);
+    }
+    var valor = $("#btn-input").val();
+    if(valor == null || valor == undefined || valor == "" || valor.replace(/\ /g,"") == "" || lock) return false;
+    lock = true;
     var scrolled=0;
     $.ajax({
         url:"background-chat.php",
@@ -40,6 +54,7 @@ function sendMessage(){
         success:function(data){
             console.log(data);
             getMessages();
+            lock = false;
         }
     });
     scrollButtom();
