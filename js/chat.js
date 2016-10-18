@@ -33,15 +33,18 @@ $(document).ready(function(){
     });
     getMessages(1);
     setInterval(getMessages,1000);
-    setInterval(function (){ messageCount = 0; },5000);
+    setInterval(function (){ messageCount = 0; },4000);
 });
 function sendMessage(){
-    if(messageCount == 10){
+    messageCount++;
+    if(messageCount >= 6){
         lockbyspan =true;
         setInterval(function(){lockbyspan=false},60000);
     }
     if(lockbyspan){
         addMessage("Se ah bloqueado el envio de mensajes por 1 minuto(s)",false,--alert);
+        scrollButtom();
+        return false;
     }
     var valor = $("#btn-input").val();
     if(valor == null || valor == undefined || valor == "" || valor.replace(/\ /g,"") == "" || lock) return false;
