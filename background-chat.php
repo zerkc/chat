@@ -21,8 +21,8 @@ if(!isset($_SESSION['limit'])){
 }
 
 if(isset($_POST['send'])){
-    $username = $_POST['username'];
-    $message = $_POST['message'];
+    $username = $db->escape_string($_POST['username']);
+    $message = $db->escape_string($_POST['message']);
     $_SESSION['limit'] = $db->insert("INSERT INTO messages SET username='$username', idTemp='{$_SESSION['id']}', message='$message' ");
 }
 
