@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script language="JavaScript" src="js/jquery.js"></script>
+    <script language="JavaScript" src="js/bootstrap.min.js"></script>
+    <script language="JavaScript" src="js/chat.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="col-lg-12 col-sm-12 col-md-12">
+        <div class="card hovercard">
+            <!--codigo para el carousel-->
+            <div id="myCarousel" class="carousel  slide">
+                <!-- Dot Indicators -->
+                <ol class="carousel-indicators">
+                    <!--<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>-->
+                </ol>
+                <!-- Items -->
+                <div class="carousel-inner">
+                    <!--<div class="active item">  <img src="image/songaSpa1.png" class="img-responsive"></div>
+                    <div class="item">  <img src="image/songaSpa2.png" class="img-responsive"></div>
+                    <div class="item">  <img src="//placehold.it/1300x500" class="img-responsive"></div>-->
+                </div>
+                <!-- Navigation -->
+                <!--<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left">&gt;</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="">&gt;</span>
+                </a>-->
+            </div>
+            <!--fin del codigo del carousel-->
+        </div>
+        <div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" aria-label="...">
+            <div class="btn-group" role="group">
+                <button type="button" id="stars" class="btn btn-default" href="#tab1" data-toggle="tab">
+                    <div class="hidden-xs">Stars</div>
+                </button>
+            </div>
+            <div class="btn-group" role="group">
+                <button type="button" id="favorites" class="btn btn-default" href="#tab2" data-toggle="tab">
+                    <div class="hidden-xs">Favorites</div>
+                </button>
+            </div>
+            <div class="btn-group" role="group">
+                <button type="button" id="following" class="btn btn-default" href="#tab3" data-toggle="tab">
+                    <div class="hidden-xs">Following</div>
+                </button>
+            </div>
+        </div>
+        <div class="well">
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="tab1">
+                    <h3>This is tab 1</h3>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ex quisquam sequi sint. Distinctio hic illum labore perferendis quas quos saepe. Ab atque debitis earum, esse et magni optio perferendis.
+                </div>
+                <div class="tab-pane fade in" id="tab2">
+                    <h3>This is tab 2</h3>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet at ducimus fuga laboriosam quaerat quis, ut. Adipisci dolor, dolorem est laudantium omnis pariatur quaerat reiciendis, repellendus suscipit velit voluptate voluptatibus!
+                </div>
+                <div class="tab-pane fade in" id="tab3">
+                    <h3>This is tab 3</h3>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque hic molestias quia rem, ut voluptate voluptates? Alias consectetur culpa enim mollitia praesentium quaerat qui quia quibusdam repellendus sunt, temporibus, velit.
+                </div>
+            </div>
+        </div>
+        <div class="row chat-window col-xs-5 col-md-3" id="chat_window_1" style="margin-left:10px;right: 0px; z-index: 2000">
+            <div class="col-xs-12 col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading top-bar">
+                        <div class="col-md-10 col-xs-10">
+                            <h3 class="panel-title"> Chat - SONGA SPA</h3>
+                        </div>
+                        <div class="col-md-1 col-xs-1" style="text-align: right;">
+                            <a href="#"><span id="minim_chat_window" class="glyphicon glyphicon-minus icon_minim"></span></a>
+                        </div>
+                    </div>
+                    <div id="Messages" class="panel-body msg_container_base">
+                        <!--<div class="row msg_container base_sent">
+                            <div class="col-md-10 col-xs-10">
+                                <div class="messages msg_sent">
+                                    <p>that mongodb thing looks good, huh?
+                                        tiny master db, and huge document store</p>
+                                    <time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-xs-2 avatar">
+                                <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+                            </div>
+                        </div>
+                        <div class="row msg_container base_receive">
+                            <div class="col-md-2 col-xs-2 avatar">
+                                <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+                            </div>
+                            <div class="col-md-10 col-xs-10">
+                                <div class="messages msg_receive">
+                                    <p>that mongodb thing looks good, huh?
+                                        tiny master db, and huge document store</p>
+                                    <time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row msg_container base_receive">
+                            <div class="col-md-2 col-xs-2 avatar">
+                                <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+                            </div>
+                            <div class="col-xs-10 col-md-10">
+                                <div class="messages msg_receive">
+                                    <p>that mongodb thing looks good, huh?
+                                        tiny master db, and huge document store</p>
+                                    <time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row msg_container base_sent">
+                            <div class="col-xs-10 col-md-10">
+                                <div class="messages msg_sent">
+                                    <p>that mongodb thing looks good, huh?
+                                        tiny master db, and huge document store</p>
+                                    <time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-xs-2 avatar">
+                                <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+                            </div>
+                        </div>
+                        <div class="row msg_container base_receive">
+                            <div class="col-md-2 col-xs-2 avatar">
+                                <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+                            </div>
+                            <div class="col-xs-10 col-md-10">
+                                <div class="messages msg_receive">
+                                    <p>that mongodb thing looks good, huh?
+                                        tiny master db, and huge document store</p>
+                                    <time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row msg_container base_sent">
+                            <div class="col-md-10 col-xs-10 ">
+                                <div class="messages msg_sent">
+                                    <p>that mongodb thing looks good, huh?
+                                        tiny master db, and huge document store</p>
+                                    <time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-xs-2 avatar">
+                                <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+                            </div>
+                        </div>-->
+                    </div>
+                    <div class="panel-footer">
+                        <div class="input-group">
+                            <input id="btn-input" type="text" class="form-control input-sm chat_input" placeholder="Write your message here..." />
+                        <span class="input-group-btn">
+                        <button class="btn btn-primary btn-sm" id="btn-chat">Send</button>
+                        </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
