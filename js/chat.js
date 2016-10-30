@@ -6,27 +6,6 @@ var lockbyspan = false;
 var messageCount = 0;
 var alert =0;
 $(document).ready(function(){
-    var first = true;
-    for(var i = 1;i<100;i++){
-
-        var urlImage = "image/songaSpa"+i+".png";
-        try {
-            if(imageExists(urlImage)){
-                var c = "";
-                if(first) {
-                    first = false;
-                    c = "active";
-                    }
-                $('.carousel-indicators').append('<li data-target="#myCarousel" data-slide-to="' + (i - 1) + '" class="'+c+'"></li>');
-                $('.carousel-inner').append('<div class="'+c+' item">  <img src="' + urlImage + '" class="img-responsive"></div>')
-            }else{
-                break;
-            }
-        }catch(err){
-            break;
-        }
-    }
-    $('.carousel').carousel({interval: 2000});
     $('#btn-chat').click(sendMessage);
     $("#btn-input").keyup(function(e){
         if(e.keyCode == 13) sendMessage();

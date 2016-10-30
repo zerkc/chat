@@ -49,6 +49,7 @@
 .messages > p {
     font-size: 13px;
     margin: 0 0 0.2rem 0;
+    color: #000;
 }
 .messages > time {
     font-size: 11px;
