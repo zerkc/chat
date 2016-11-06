@@ -1396,7 +1396,7 @@
 	}
 
 	body {
-		background: #2e3842;
+		background: #FFF;
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1472,7 +1472,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #fff;
+		color: #62bd1c;
 		font-weight: 800;
 		letter-spacing: 0.225em;
 		line-height: 1em;
@@ -2493,6 +2493,7 @@
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
+		border: 0.01em solid rgba(5,5,5,0.09);
 	}
 
 		.spotlight .image {
@@ -2527,19 +2528,19 @@
 		}
 
 		.spotlight:nth-child(1) {
-			background-color: rgba(0, 0, 0, 0.075);
+			background-color: #FFF;
 		}
 
 		.spotlight:nth-child(2) {
-			background-color: rgba(0, 0, 0, 0.15);
+			background-color: #FFF;
 		}
 
 		.spotlight:nth-child(3) {
-			background-color: rgba(0, 0, 0, 0.225);
+			background-color: #FFF;
 		}
 
 		.spotlight:nth-child(4) {
-			background-color: rgba(0, 0, 0, 0.3);
+			background-color: #FFF;
 		}
 
 		.spotlight:nth-child(5) {
@@ -2641,7 +2642,7 @@
 		}
 
 		.wrapper.style1 {
-			background-color: #21b2a6;
+			background-color: #FFF;
 			color: #c7ebe8;
 		}
 
@@ -2650,7 +2651,7 @@
 			}
 
 			.wrapper.style1 h2, .wrapper.style1 h3, .wrapper.style1 h4, .wrapper.style1 h5, .wrapper.style1 h6 {
-				color: #ffffff;
+				color: #62bd1c;
 			}
 
 			.wrapper.style1 hr {
@@ -2674,7 +2675,7 @@
 			}
 
 			.wrapper.style1 header.major p {
-				color: #c7ebe8;
+				color: #fc6b0a;
 			}
 
 			.wrapper.style1 label {
@@ -2799,8 +2800,8 @@
 		}
 
 		.wrapper.style3 {
-			background-color: #505393;
-			color: #d3d4e4;
+			background-color: #fff;
+			color: #fc6b0a;
 		}
 
 			.wrapper.style3 strong, .wrapper.style3 b {
@@ -2808,7 +2809,7 @@
 			}
 
 			.wrapper.style3 h2, .wrapper.style3 h3, .wrapper.style3 h4, .wrapper.style3 h5, .wrapper.style3 h6 {
-				color: #ffffff;
+				color: #62bd1c;
 			}
 
 			.wrapper.style3 hr {
@@ -2832,7 +2833,7 @@
 			}
 
 			.wrapper.style3 header.major p {
-				color: #d3d4e4;
+				color: #fc6b0a;
 			}
 
 			.wrapper.style3 label {
@@ -3254,7 +3255,7 @@
 		-webkit-transition: background-color 0.2s ease;
 		-ms-transition: background-color 0.2s ease;
 		transition: background-color 0.2s ease;
-		background: #2e3842;
+		background: #f2f2f2;
 		height: 3em;
 		left: 0;
 		line-height: 3em;
@@ -3422,7 +3423,6 @@
 				-webkit-transition-delay: 0.25s;
 				-ms-transition-delay: 0.25s;
 				transition-delay: 0.25s;
-				background: #fff;
 				content: '';
 				display: block;
 				height: 2px;
@@ -3431,11 +3431,13 @@
 			}
 
 			#banner h2:before {
+				background: #fc6b0a;
 				top: 0;
 				left: 0;
 			}
 
 			#banner h2:after {
+				background: #62bd1c;
 				bottom: 0;
 				right: 0;
 			}
@@ -3509,7 +3511,7 @@
 			-ms-transition-delay: 1.25s;
 			transition-delay: 1.25s;
 			content: '';
-			background: #2e3842;
+			background: #FFF;
 			display: block;
 			width: 100%;
 			height: 100%;
@@ -3779,10 +3781,10 @@
 /* Landing */
 
 	body.landing #page-wrapper {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.6), rgba(0,0,0,0.0)), url("../../images/banner.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.6), rgba(0,0,0,0.0)), url("../../images/banner.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.6), rgba(0,0,0,0.0)), url("../../images/banner.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.6), rgba(0,0,0,0.0)), url("../../images/banner.jpg");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -3791,7 +3793,7 @@
 	}
 
 	body.landing #footer {
-		background-color: rgba(29, 36, 42, 0.9);
+		background-color: rgba(29, 36, 42, 0.0);
 	}
 
 	body.is-mobile.landing #page-wrapper {

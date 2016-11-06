@@ -89,7 +89,7 @@ function addMessage(message,isMe,id){
     //<time datetime="2009-11-13T20:00">Timothy • 51 min</time>
     var divImage = $('<div class="col-md-2 col-xs-2 avatar"></div>');
 
-    divImage.append('<img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">');
+    divImage.append('<img src="images/avatar.jpg" class=" img-responsive ">');
     secoundDiv.append(divMessage);
     if(isMe) {
         principalDiv.append(secoundDiv);

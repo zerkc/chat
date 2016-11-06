@@ -49,7 +49,7 @@
 .messages > p {
     font-size: 13px;
     margin: 0 0 0.2rem 0;
-    color: #000;
+    color: #fc6b0a;
 }
 .messages > time {
     font-size: 11px;
@@ -63,6 +63,9 @@
 img {
     display: block;
     width: 100%;
+}
+.panel-title{
+    color:#62bd1c !important;
 }
 .avatar {
     position: relative;
