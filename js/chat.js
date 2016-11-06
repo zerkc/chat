@@ -21,7 +21,7 @@ function sendMessage(){
         setInterval(function(){lockbyspan=false},60000);
     }
     if(lockbyspan){
-        addMessage("Se ah bloqueado el envio de mensajes por 1 minuto(s)",false,--alert);
+        addMessage("Se ha bloqueado el envio de mensajes por 1 minuto(s)",false,--alert);
         scrollButtom();
         return false;
     }
