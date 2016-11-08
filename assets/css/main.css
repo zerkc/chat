@@ -3256,7 +3256,7 @@
 		-ms-transition: background-color 0.2s ease;
 		transition: background-color 0.2s ease;
 		background: #f2f2f2;
-		height: 3em;
+		height: 4em;
 		left: 0;
 		line-height: 3em;
 		position: fixed;
@@ -3595,7 +3595,7 @@
 			-webkit-order: 2;
 			-ms-order: 2;
 			order: 2;
-			width: 30%;
+			width: 40%;
 		}
 
 		@media screen and (max-width: 980px) {
@@ -3813,4 +3813,15 @@
 
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
+	}
+
+	.colorblack{
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../../images/banner.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../../images/banner.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../../images/banner.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../../images/banner.jpg");
+		background-attachment: fixed;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
